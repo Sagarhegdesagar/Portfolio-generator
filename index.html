@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Portfolio Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Online Portfolio Generator</h1>
+    </header>
+    <main>
+        <section id="personal-info">
+            <h2>Personal Information</h2>
+            <!-- Form for personal information -->
+            <form id="personal-info-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <label for="about">About Me:</label>
+                <textarea id="about" name="about" required></textarea>
+                <button type="submit">Save Personal Info</button>
+            </form>
+        </section>
+        
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div id="portfolio-items"></div>
+            <!-- Button to add new portfolio item -->
+            <button id="add-portfolio-item">Add Portfolio Item</button>
+        </section>
+
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
